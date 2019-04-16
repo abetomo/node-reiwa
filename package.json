@@ -1,7 +1,7 @@
 {
   "name": "node-reiwa",
   "version": "0.1.0",
-  "description": "",
+  "description": "今年は令和何年ですか？  What year of Reiwa is this?",
   "main": "index.js",
   "files": [
     "index.js"
