@@ -14,5 +14,5 @@ module.exports.reiwa = function (date) {
   ) {
     return null
   }
-  return (year - REIWA_START_YEAR + 1)
+  return year - REIWA_START_YEAR + 1
 }
