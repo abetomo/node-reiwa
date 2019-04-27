@@ -1,6 +1,6 @@
 'use strict'
 
-const reiwa = require('./').reiwa
+const reiwa = require('./')
 const test = require('tape')
 
 test('reiwa is null', (t) => {

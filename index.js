@@ -3,7 +3,7 @@
 const REIWA_START_YEAR = 2019
 const REIWA_START_MONTH = 5
 
-module.exports.reiwa = function (date) {
+module.exports = function (date) {
   if (date == null) return null
 
   const year = date.getFullYear()

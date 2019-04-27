@@ -16,7 +16,7 @@ What year of Reiwa is this?
 ## example
 
 ```js
-const reiwa = require('node-reiwa').reiwa
+const reiwa = require('node-reiwa')
 console.log(reiwa(new Date('2019-05-01')))
 // 1
 
