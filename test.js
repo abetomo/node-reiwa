@@ -1,6 +1,6 @@
 'use strict'
 
-const reiwa = require('./').reiwa
+const reiwa = require('./')
 const test = require('tape')
 
 test('reiwa is null', (t) => {
@@ -33,6 +33,9 @@ test('reiwa', (t) => {
   }, {
     date: '2030-11-30',
     expected: 12
+  }, {
+    date: '2036-12-24',
+    expected: 18
   }]
   for (const testCase of tests) {
     t.equal(
