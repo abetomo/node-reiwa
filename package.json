@@ -2,14 +2,20 @@
   "name": "node-reiwa",
   "version": "1.0.0",
   "description": "今年は令和何年ですか？  What year of Reiwa is this?",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "index.js"
+    "LICENSE",
+    "README.md",
+    "dist",
+    "package.json"
   ],
   "scripts": {
-    "lint": "standard",
+    "build": "tsc index.ts --outDir ./dist --declaration",
+    "lint": "ts-standard *.ts",
+    "prepublishOnly": "npm run build",
     "test": "npm run lint && npm run unit",
-    "unit": "tape test.js"
+    "unit": "ts-node node_modules/tape/bin/tape test.ts"
   },
   "repository": {
     "type": "git",
@@ -25,7 +31,10 @@
   },
   "homepage": "https://github.com/abetomo/node-reiwa#readme",
   "devDependencies": {
-    "standard": "^16.0.3",
-    "tape": "^5.0.1"
+    "@types/tape": "^4.13.2",
+    "tape": "^5.6.3",
+    "ts-node": "^10.9.1",
+    "ts-standard": "^12.0.2",
+    "typescript": "^4.9.4"
   }
 }

@@ -1,7 +1,5 @@
-'use strict'
-
-const reiwa = require('./')
-const test = require('tape')
+import reiwa from './'
+import test from 'tape'
 
 test('reiwa is null', (t) => {
   const tests = [

@@ -1,9 +1,7 @@
-'use strict'
-
 const REIWA_START_YEAR = 2019
 const REIWA_START_MONTH = 5
 
-module.exports = function (date) {
+export default function (date: Date): number | null {
   if (date == null) return null
 
   const year = date.getFullYear()
