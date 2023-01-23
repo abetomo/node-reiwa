@@ -1,6 +1,6 @@
 {
   "name": "node-reiwa",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "今年は令和何年ですか？  What year of Reiwa is this?",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
